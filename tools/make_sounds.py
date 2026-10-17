@@ -140,7 +140,7 @@ def drums(bpm, bars):
 
 
 
-def echoed(dry, taps=((0.05, 0.3), (0.11, 0.15))):
+def echoed(dry, taps=((0.03, 0.15),)):
     """A little ring of the loudspeaker."""
     out = dry + [0.0] * int(RATE * 0.3)
     for delay, gain in taps:
